@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFF8F5FA"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fbf2ff">
+
+            <info.androidhive.fontawesome.FontTextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:background="#fbf2ff"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/fa_comment"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:solid_icon="true" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.85"
+                android:background="#fbf2ff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textAuthorC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="TextView"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textTitleC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="tytyl"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textBodyC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bla bla"
+            android:textSize="14dp"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFF8F5FA"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
